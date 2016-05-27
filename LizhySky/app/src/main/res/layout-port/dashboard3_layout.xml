@@ -47,13 +47,13 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
 
-                <com.ezio.multiwii.dashboard.dashboard3.HorizonView
+                <com.ezio.Sky.dashboard.dashboard3.HorizonView
                     android:id="@+id/horizonView1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
 
-                <com.ezio.multiwii.dashboard.dashboard3.HeadingView
+                <com.ezio.Sky.dashboard.dashboard3.HeadingView
                     android:id="@+id/headingView1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -66,13 +66,13 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
 
-                <com.ezio.multiwii.dashboard.dashboard3.AltitudeView
+                <com.ezio.Sky.dashboard.dashboard3.AltitudeView
                     android:id="@+id/altitudeView1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
 
-                <com.ezio.multiwii.dashboard.dashboard3.VarioView
+                <com.ezio.Sky.dashboard.dashboard3.VarioView
                     android:id="@+id/varioView1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

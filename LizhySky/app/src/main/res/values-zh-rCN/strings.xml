@@ -156,13 +156,16 @@
     <string name="page1">仪表盘</string>
     <string name="page2">飞控的设置</string>
     <string name="page3">设置</string>
+    <string name="Unlock">解锁</string>
+    <string name="Lock">锁定</string>
     <string name="RawData">原始数据</string>
     <string name="ShareIt">分享您的配置</string>
     <string name="RXBIND">RX 绑定</string>
     <string name="FollowMe">跟随我： #define USE_MSP_WP 应在 config.h 打开。 I2C GPS 不能用 ；闪烁时，手机位置时将发送到MW</string>
     <string name="InfoDonate">你发现此应用程序很有用吗？支持它或给开发人员的捐款支持其发展! 本软件中文简体版本由fryefryefrye和arvidwen汉化。汉化有问题联系：fryefryefrye@gmail.com</string>
     <string name="convertToKML">转换为 KML (谷歌地球)</string>
-    <string name="infoDonate">本程序为Multiwii EZ-GUI改版，适配水中游鱼开源飞行器，所以如果你喜欢，并使用 MultiWii EZ-GUI，请考虑捐献原作者。这将使我感兴趣继续开发程序。</string>
+    <!--<string name="infoDonate">本程序为Multiwii EZ-GUI改版，适配水中游鱼开源飞行器，所以如果你喜欢，并使用 MultiWii EZ-GUI，请考虑捐献原作者。这将使我感兴趣继续开发程序。</string>-->
+    <string name="infoDonate">本程序由Lizhy为水中游鱼开发，后期维护请联系lizhy@live.cn.所以如果你喜欢，并使用 本软件，请考虑捐献作者。这将使我感兴趣继续开发程序。</string>
     <string name="Debug">调试</string>
     <string name="Later">不是现在</string>
     <string name="Warning">警告</string>

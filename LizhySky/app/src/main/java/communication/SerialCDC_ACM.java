@@ -24,13 +24,14 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.hardware.usb.UsbManager;
 import android.os.Build;
-import android.util.Log;
 import android.widget.Toast;
 
-import com.ezio.multiwii.R;
+import com.lizhy.LizhySky.R;
 import com.hoho.android.usbserial.driver.UsbSerialDriver;
 import com.hoho.android.usbserial.driver.UsbSerialProber;
 import com.hoho.android.usbserial.util.SerialInputOutputManager;
+
+import util.LogUtil;
 
 public class SerialCDC_ACM extends Communication {
 
@@ -44,7 +45,7 @@ public class SerialCDC_ACM extends Communication {
 
 		@Override
 		public void onRunError(Exception e) {
-			Log.d(TAG, "Runner stopped.");
+			LogUtil.d(TAG, "Runner stopped.");
 		}
 
 		@Override
@@ -53,7 +54,7 @@ public class SerialCDC_ACM extends Communication {
 				fifo.put(Integer.valueOf(data[i]));
 
 			mHandler.obtainMessage(MESSAGE_READ, data.length, -1, data).sendToTarget();
-			// Log.d("aaa", "FiFo count:" + String.valueOf(fifo.size()));
+			// LogUtil.d("aaa", "FiFo count:" + String.valueOf(fifo.size()));
 
 		}
 	};
@@ -74,7 +75,7 @@ public class SerialCDC_ACM extends Communication {
 		mUsbManager = (UsbManager) context.getSystemService(Context.USB_SERVICE);
 		mSerial = UsbSerialProber.findFirstDevice(mUsbManager);
 
-		Log.d(TAG, "Resumed, mSerialDevice=" + mSerial);
+		LogUtil.d(TAG, "Resumed, mSerialDevice=" + mSerial);
 		if (mSerial == null) {
 			Toast.makeText(context, "No serial device.", Toast.LENGTH_LONG).show();
 		} else {
@@ -82,7 +83,7 @@ public class SerialCDC_ACM extends Communication {
 				mSerial.open();
 
 			} catch (IOException e) {
-				Log.e(TAG, "Error setting up device: " + e.getMessage(), e);
+				LogUtil.e(TAG, "Error setting up device: " + e.getMessage(), e);
 				Toast.makeText(context, "Error opening device: " + e.getMessage(), Toast.LENGTH_LONG).show();
 				Connected = false;
 				try {
@@ -168,7 +169,7 @@ public class SerialCDC_ACM extends Communication {
 
 	private void stopIoManager() {
 		if (mSerialIoManager != null) {
-			Log.i(TAG, "Stopping io manager ..");
+			LogUtil.i(TAG, "Stopping io manager ..");
 			mSerialIoManager.stop();
 			mSerialIoManager = null;
 		}
@@ -176,7 +177,7 @@ public class SerialCDC_ACM extends Communication {
 
 	private void startIoManager() {
 		if (mSerial != null) {
-			Log.i(TAG, "Starting io manager ..");
+			LogUtil.i(TAG, "Starting io manager ..");
 			mSerialIoManager = new SerialInputOutputManager(mSerial, mListener);
 			mExecutor.submit(mSerialIoManager);
 		}

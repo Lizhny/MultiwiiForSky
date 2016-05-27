@@ -12,7 +12,7 @@ import android.bluetooth.BluetoothSocket;
 import android.content.Context;
 import android.widget.Toast;
 
-import com.ezio.multiwii.R;
+import com.lizhy.LizhySky.R;
 
 import util.LogUtil;
 
@@ -37,6 +37,7 @@ public class BT extends Communication {
     @Override
     public void Enable() {
         Toast.makeText(context, "Starting Bluetooth", Toast.LENGTH_SHORT).show();
+        LogUtil.d(TAG, "+++ Enable BT +++");
 
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if (mBluetoothAdapter == null) {
@@ -51,6 +52,7 @@ public class BT extends Communication {
             return;
         }
 
+        LogUtil.d(TAG, "+++ DONE IN ON CREATE, GOT LOCAL BT ADAPTER +++");
 
     }
 
@@ -68,6 +70,7 @@ public class BT extends Communication {
                 btSocket.connect();
                 Connected = true;
 
+                LogUtil.d(TAG, "BT connection established, data transfer link open.");
                 Toast.makeText(context, context.getString(R.string.Connected), Toast.LENGTH_LONG).show();
 
                 // app.Speak("Connected");
