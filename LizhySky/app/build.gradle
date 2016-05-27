@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.ezio.multiwii"
+        minSdkVersion 16
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:21.0.3'
+    compile files('libs/ftdriver.jar')
+    compile files('libs/sec.jar')
+    compile files('libs/usbseriallibrary.jar')
+    compile project(':actionbarsherlock yes')
+}

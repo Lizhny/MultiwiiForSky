@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_connect"
+        android:showAsAction="always"
+        android:title="@string/menu_connect">
+    </item>
+    <item
+        android:id="@+id/menu_connect_frsky"
+        android:showAsAction="always|withText"
+        android:title="@string/Connect_frsky">
+    </item>
+    <item
+        android:id="@+id/menu_disconnect"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/menu_disconnect">
+    </item>
+    <item
+        android:id="@+id/menu_exit"
+        android:icon="@drawable/shutdown"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/menu_exit"/>
+
+</menu>

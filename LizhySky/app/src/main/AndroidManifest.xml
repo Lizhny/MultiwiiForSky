@@ -1,0 +1,218 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ezio.multiwii"
+    android:versionCode="001"
+    android:versionName="-li" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:name=".app.App"
+        android:icon="@drawable/freedomsky"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Main.MainMultiWiiActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="unspecified" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <!--<activity-->
+            <!--android:name=".Main.MainMultiWiiActivity"-->
+            <!--android:configChanges="orientation|screenSize"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="unspecified">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />-->
+            <!--</intent-filter>-->
+
+            <!--<meta-data-->
+                <!--android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"-->
+                <!--android:resource="@xml/device_filter" />-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name=".Main.MainMultiWiiActivity"-->
+            <!--android:configChanges="orientation|screenSize"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="unspecified">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />-->
+            <!--</intent-filter>-->
+
+            <!--<meta-data-->
+                <!--android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"-->
+                <!--android:resource="@xml/device_filter" />-->
+        <!--</activity>-->
+        <activity
+            android:name=".config.DeviceListActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".radio.RadioActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="unspecified" >
+        </activity>
+        <activity
+            android:name=".dashboard.Dashboard1Activity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="unspecified"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".dashboard.Dashboard2Activity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".config.ConfigActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="unspecified" >
+        </activity>
+        <activity
+            android:name=".log.LogActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="unspecified" >
+        </activity>
+        <activity
+            android:name=".gps.GPSActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="unspecified" >
+        </activity>
+        <activity
+            android:name=".motors.MotorsActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="unspecified" >
+        </activity>
+        <activity
+            android:name=".aux_pid.PIDActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="unspecified" >
+        </activity>
+        <activity
+            android:name=".other.CalibrationActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="unspecified" >
+        </activity>
+        <activity
+            android:name=".map.MapActivityMy"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".waypoints.WaypointActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name=".about.AboutActivity" >
+        </activity>
+        <activity
+            android:name="com.ezio.multiwii.aux_pid.AUXActivity"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name=".advanced.ControlActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".advanced.GravitySensorControl"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".advanced.AdvancedActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="unspecified" >
+        </activity>
+        <activity
+            android:name=".graph.GraphsActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="unspecified" >
+        </activity>
+        <activity
+            android:name=".graph.SelectToShowActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="unspecified" >
+        </activity>
+        <activity
+            android:name=".frsky.FrskyActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="unspecified" >
+        </activity>
+        <activity
+            android:name=".raw.RawDataActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="unspecified" >
+        </activity>
+        <activity
+            android:name=".about.InfoActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".dashboard.dashboard3.Dashboard3Activity"
+            android:screenOrientation="fullSensor" >
+        </activity>
+        <activity
+            android:name=".dashboard.Dashboard4Activity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name=".waypoints.MapWaypointsActivity"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.ezio.multiwii.aux_pid.ServosActivity"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name=".other.MiscActivity"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name=".advanced.AUXControlActivity"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity android:name=".raw.vt100Activity" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" /><!-- 添加震动权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /><!-- 允许应用访问电话状态 -->
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /><!-- 允许程序创建模拟位置提供用于测试 -->
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+</manifest>
