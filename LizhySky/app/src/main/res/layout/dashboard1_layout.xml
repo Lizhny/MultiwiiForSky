@@ -58,13 +58,13 @@
                     <!--android:layout_width="wrap_content"-->
                     <!--android:layout_height="wrap_content" >-->
 
-                    <!--<com.ezio.multiwii.dashboard.PitchRollView-->
+                    <!--<PitchRollView-->
                         <!--android:id="@+id/PRVp"-->
                         <!--android:layout_width="fill_parent"-->
                         <!--android:layout_height="92dp"-->
                         <!--android:layout_weight="1" />-->
 
-                    <!--<com.ezio.multiwii.dashboard.PitchRollView-->
+                    <!--<PitchRollView-->
                         <!--android:id="@+id/PRVr"-->
                         <!--android:layout_width="fill_parent"-->
                         <!--android:layout_height="92dp"-->
@@ -90,7 +90,7 @@
                     <!--android:layout_width="wrap_content"-->
                     <!--android:layout_height="wrap_content" >-->
 
-                    <!--<com.ezio.multiwii.dashboard.PitchRollCircleView-->
+                    <!--<PitchRollCircleView-->
                         <!--android:id="@+id/PitchRollCircle"-->
                         <!--android:layout_width="match_parent"-->
                         <!--android:layout_height="146dp" />-->
@@ -125,13 +125,13 @@
                     <!--android:layout_width="wrap_content"-->
                     <!--android:layout_height="wrap_content" >-->
 
-                    <!--<com.ezio.multiwii.dashboard.CompassView-->
+                    <!--<CompassView-->
                         <!--android:id="@+id/CompassView02"-->
                         <!--android:layout_width="wrap_content"-->
                         <!--android:layout_height="fill_parent"-->
                         <!--android:layout_weight="1" />-->
 
-                    <!--<com.ezio.multiwii.dashboard.CompassView-->
+                    <!--<CompassView-->
                         <!--android:id="@+id/Mag"-->
                         <!--android:layout_width="wrap_content"-->
                         <!--android:layout_height="70dp"-->

@@ -27,7 +27,7 @@ import android.hardware.usb.UsbManager;
 import android.os.Build;
 import android.widget.Toast;
 
-import com.lizhy.LizhySky.R;
+import com.lizhy.Sky.R;
 
 public class SerialFTDI extends Communication {
 

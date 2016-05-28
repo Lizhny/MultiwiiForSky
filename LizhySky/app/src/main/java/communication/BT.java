@@ -12,7 +12,7 @@ import android.bluetooth.BluetoothSocket;
 import android.content.Context;
 import android.widget.Toast;
 
-import com.lizhy.LizhySky.R;
+import com.lizhy.Sky.R;
 
 import util.LogUtil;
 

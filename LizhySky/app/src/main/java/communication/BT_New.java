@@ -11,7 +11,7 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Context;
 
-import com.lizhy.LizhySky.R;
+import com.lizhy.Sky.R;
 
 import util.LogUtil;
 

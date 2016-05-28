@@ -26,7 +26,7 @@ import android.hardware.usb.UsbManager;
 import android.os.Build;
 import android.widget.Toast;
 
-import com.lizhy.LizhySky.R;
+import com.lizhy.Sky.R;
 import com.hoho.android.usbserial.driver.UsbSerialDriver;
 import com.hoho.android.usbserial.driver.UsbSerialProber;
 import com.hoho.android.usbserial.util.SerialInputOutputManager;
