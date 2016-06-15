@@ -157,7 +157,6 @@
     <string name="page2">飞控的设置</string>
     <string name="page3">设置</string>
     <string name="Unlock">解锁</string>
-    <string name="Lock">锁定</string>
     <string name="RawData">原始数据</string>
     <string name="ShareIt">分享您的配置</string>
     <string name="RXBIND">RX 绑定</string>

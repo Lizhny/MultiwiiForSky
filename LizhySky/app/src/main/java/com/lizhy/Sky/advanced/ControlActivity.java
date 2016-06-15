@@ -39,11 +39,6 @@ import com.lizhy.Sky.radio.StickView;
 public class ControlActivity extends Activity implements View.OnClickListener {
 
     private boolean killme = false;
-    private Boolean isLocked = true;//是否锁定
-    private Button mBtnConnect;
-    private Button mBtnAccCalibration;
-    private Button mBtnQENHight;
-    private Button mBtnConfig;
     private Button mBtnHandsMode;
     private Button mBtnUnlock;
     private static final int REQUEST_CONNECT_DEVICE_MULTIWII = 1;
@@ -119,10 +114,10 @@ public class ControlActivity extends Activity implements View.OnClickListener {
 
         s1 = (StickView) findViewById(R.id.stickView1);
         s2 = (StickView) findViewById(R.id.stickView2);
-        mBtnConnect = (Button) findViewById(R.id.bt_Connect);
-        mBtnAccCalibration = (Button) findViewById(R.id.bt_AccCalibration);
-        mBtnQENHight = (Button) findViewById(R.id.bt_QENHight);
-        mBtnConfig = (Button) findViewById(R.id.bt_Config);
+        Button mBtnConnect = (Button) findViewById(R.id.bt_Connect);
+        Button mBtnAccCalibration = (Button) findViewById(R.id.bt_AccCalibration);
+        Button mBtnQENHight = (Button) findViewById(R.id.bt_QENHight);
+        Button mBtnConfig = (Button) findViewById(R.id.bt_Config);
         mBtnHandsMode = (Button) findViewById(R.id.bt_HandsMode);
         mBtnUnlock = (Button) findViewById(R.id.bt_Unlock);
         mBtnConnect.setOnClickListener(this);
@@ -387,8 +382,6 @@ public class ControlActivity extends Activity implements View.OnClickListener {
                 finish();
                 break;
             case R.id.bt_Unlock:
-                    isLocked = false;//解锁
-                    mBtnUnlock.setText(R.string.Lock);
                     Toast.makeText(getApplicationContext(), "解锁中，请等待。", Toast.LENGTH_LONG).show();
                     CH8[3] = 1000;
                     CH8[2] = 1900;
