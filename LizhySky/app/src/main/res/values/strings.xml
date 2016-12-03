@@ -281,5 +281,10 @@
     <string name="Mode3">反日本手</string>
     <string name="Mode4">反美国手</string>
     <string name="QEN_hight">气压定高</string>
+    <string name="select_device">选择要连接的设备</string>
+    <string name="Unlock">解锁</string>
+    <string name="Left_hand">左手油门</string>
+    <string name="Right_hand">右手油门</string>
+    <string name="Unuse_hand_mode">其他油门模式</string>
 
 </resources>

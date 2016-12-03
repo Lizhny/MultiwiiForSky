@@ -181,9 +181,8 @@ public class MainMultiWiiActivity extends SherlockActivity {
             e1.printStackTrace();
         }
 
-//        TVInfo.setText(getString(R.string.app_name) + " " + app_ver + "." + String.valueOf(app_ver_code));//版本号
-        TVInfo.setText("水中游鱼5.0");//版本号
-//        TVInfo.setText("lizhySKY");//版本号
+        TVInfo.setText(getString(R.string.app_name) + " " + app_ver + "." + String.valueOf(app_ver_code));//版本号
+        TVInfo.setText(R.string.app_name);//版本号
 
         if (app.commMW.Connected || app.commFrsky.Connected) {
 
